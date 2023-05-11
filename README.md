@@ -1,16 +1,15 @@
-# my_app
+# GeoStashr (CS 4750)
 
-A new Flutter project.
+Final project for CS 4750 Mobile App Development.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+This geocaching application allows user to create and manage stashes as well as view other user-created stashes. These come with information presented in the form of map markers, as well as a virtual logbook which users may visit and mark what they took and left from the geocache. There is also a notification system for stashes in order to report missing/damaged stashes.
 
-A few resources to get you started if this is your first Flutter project:
+## Notes
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This app utlilizes the Mapbox Static Tiles API for map customization and tile loading, which has a free tier of 200,000 free tile requests per month, with a pay as you go model if it goes over that limit. Some restrictions were put in place of zooming and map traversal in order to minimize the number of requests. Additionally, Firebase was used to authenticate users and Firestore to store cache and user information.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Future Updates
+
+In the future, I would like to get user profile statistics up and running for the user to see stats such as miles walked, caches found, and logbook entries made. I would also like to implement profile pictures as well as cache pictures for more customization.
